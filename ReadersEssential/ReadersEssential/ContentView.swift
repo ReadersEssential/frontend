@@ -7,18 +7,21 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+//struct name View format, in that you can have anything
+struct ReadersEssentialFirstView: View{
+    var body: some View{
+        Text("Readers Essential")
+            .font(.title)
+            .fontDesign(Font.Design.serif)
+            .fontWeight(Font.Weight.light)
+            .frame(
+                width: CGFloat.pi*230,
+                height: CGFloat.pi*230,
+                alignment: .top
+            )
     }
 }
 
 #Preview {
-    ContentView()
+    ReadersEssentialFirstView()
 }

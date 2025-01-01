@@ -11,7 +11,7 @@ import SwiftUI
 struct ReadersEssentialApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ReadersEssentialFirstView()
         }
     }
 }
