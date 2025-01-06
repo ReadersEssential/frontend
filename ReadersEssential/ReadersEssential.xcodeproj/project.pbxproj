@@ -29,20 +29,47 @@
 		1845D51B2D249B61002014F9 /* ReadersEssentialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadersEssentialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		18DD56EB2D2B8F8D00ADCBF7 /* Exceptions for "TestandPreview" folder in "ReadersEssential" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ReadersEssentialTests/ReadersEssentialTests.swift,
+				ReadersEssentialUITests/ReadersEssentialUITests.swift,
+				ReadersEssentialUITests/ReadersEssentialUITestsLaunchTests.swift,
+			);
+			target = 1845D5002D249B5F002014F9 /* ReadersEssential */;
+		};
+		18DD56EC2D2B8F8D00ADCBF7 /* Exceptions for "TestandPreview" folder in "ReadersEssentialTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ReadersEssentialTests/ReadersEssentialTests.swift,
+			);
+			target = 1845D5102D249B61002014F9 /* ReadersEssentialTests */;
+		};
+		18DD56F22D2B8F8F00ADCBF7 /* Exceptions for "TestandPreview" folder in "ReadersEssentialUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ReadersEssentialUITests/ReadersEssentialUITests.swift,
+				ReadersEssentialUITests/ReadersEssentialUITestsLaunchTests.swift,
+			);
+			target = 1845D51A2D249B61002014F9 /* ReadersEssentialUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		1845D5032D249B5F002014F9 /* ReadersEssential */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ReadersEssential;
 			sourceTree = "<group>";
 		};
-		1845D5142D249B61002014F9 /* ReadersEssentialTests */ = {
+		18DD56E72D2B8F7C00ADCBF7 /* TestandPreview */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ReadersEssentialTests;
-			sourceTree = "<group>";
-		};
-		1845D51E2D249B61002014F9 /* ReadersEssentialUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ReadersEssentialUITests;
+			exceptions = (
+				18DD56EB2D2B8F8D00ADCBF7 /* Exceptions for "TestandPreview" folder in "ReadersEssential" target */,
+				18DD56EC2D2B8F8D00ADCBF7 /* Exceptions for "TestandPreview" folder in "ReadersEssentialTests" target */,
+				18DD56F22D2B8F8F00ADCBF7 /* Exceptions for "TestandPreview" folder in "ReadersEssentialUITests" target */,
+			);
+			path = TestandPreview;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -76,9 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				1845D5032D249B5F002014F9 /* ReadersEssential */,
-				1845D5142D249B61002014F9 /* ReadersEssentialTests */,
-				1845D51E2D249B61002014F9 /* ReadersEssentialUITests */,
 				1845D5022D249B5F002014F9 /* Products */,
+				18DD56E72D2B8F7C00ADCBF7 /* TestandPreview */,
 			);
 			sourceTree = "<group>";
 			usesTabs = 0;
@@ -110,6 +136,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				1845D5032D249B5F002014F9 /* ReadersEssential */,
+				18DD56E72D2B8F7C00ADCBF7 /* TestandPreview */,
 			);
 			name = ReadersEssential;
 			packageProductDependencies = (
@@ -131,9 +158,6 @@
 			dependencies = (
 				1845D5132D249B61002014F9 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				1845D5142D249B61002014F9 /* ReadersEssentialTests */,
-			);
 			name = ReadersEssentialTests;
 			packageProductDependencies = (
 			);
@@ -153,9 +177,6 @@
 			);
 			dependencies = (
 				1845D51D2D249B61002014F9 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				1845D51E2D249B61002014F9 /* ReadersEssentialUITests */,
 			);
 			name = ReadersEssentialUITests;
 			packageProductDependencies = (
